@@ -2,15 +2,6 @@
   "object": {
     "pins": [
       {
-        "package": "MockMealAdapters",
-        "repositoryURL": "https://github.com/Italbytz/spm-adapters-meal-mock.git",
-        "state": {
-          "branch": null,
-          "revision": "3ef9acb17f80a3c600f6426c136be7af9f729b25",
-          "version": "0.0.5"
-        }
-      },
-      {
         "package": "OpenMensaMealAdapters",
         "repositoryURL": "https://github.com/Italbytz/spm-adapters-meal-openmensa.git",
         "state": {

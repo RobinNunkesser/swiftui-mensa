@@ -14,7 +14,6 @@
 		6F84A2EC278714A800279DF1 /* MensaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F84A2EB278714A800279DF1 /* MensaTests.swift */; };
 		6F84A2F6278714A800279DF1 /* MensaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F84A2F5278714A800279DF1 /* MensaUITests.swift */; };
 		6F84A2F8278714A800279DF1 /* MensaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F84A2F7278714A800279DF1 /* MensaUITestsLaunchTests.swift */; };
-		6F84A3722787248400279DF1 /* MockMealAdapters in Frameworks */ = {isa = PBXBuildFile; productRef = 6F84A3712787248400279DF1 /* MockMealAdapters */; };
 		6F84A3782788338400279DF1 /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F84A3772788338400279DF1 /* MealViewModel.swift */; };
 		6F84A37A278833EF00279DF1 /* MealRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F84A379278833EF00279DF1 /* MealRow.swift */; };
 		6F84A37D2788344E00279DF1 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 6F84A37C2788344E00279DF1 /* URLImage */; };
@@ -72,7 +71,6 @@
 			files = (
 				6F84A38827885C1C00279DF1 /* OpenMensaMealAdapters in Frameworks */,
 				6F84A37D2788344E00279DF1 /* URLImage in Frameworks */,
-				6F84A3722787248400279DF1 /* MockMealAdapters in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +172,6 @@
 			);
 			name = Mensa;
 			packageProductDependencies = (
-				6F84A3712787248400279DF1 /* MockMealAdapters */,
 				6F84A37C2788344E00279DF1 /* URLImage */,
 				6F84A38727885C1C00279DF1 /* OpenMensaMealAdapters */,
 			);
@@ -251,7 +248,6 @@
 			);
 			mainGroup = 6F84A2CE278714A400279DF1;
 			packageReferences = (
-				6F84A3702787248400279DF1 /* XCRemoteSwiftPackageReference "spm-adapters-meal-mock" */,
 				6F84A37B2788344E00279DF1 /* XCRemoteSwiftPackageReference "url-image" */,
 				6F84A38627885C1C00279DF1 /* XCRemoteSwiftPackageReference "spm-adapters-meal-openmensa" */,
 			);
@@ -635,14 +631,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6F84A3702787248400279DF1 /* XCRemoteSwiftPackageReference "spm-adapters-meal-mock" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Italbytz/spm-adapters-meal-mock.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.5;
-			};
-		};
 		6F84A37B2788344E00279DF1 /* XCRemoteSwiftPackageReference "url-image" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
@@ -662,11 +650,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6F84A3712787248400279DF1 /* MockMealAdapters */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6F84A3702787248400279DF1 /* XCRemoteSwiftPackageReference "spm-adapters-meal-mock" */;
-			productName = MockMealAdapters;
-		};
 		6F84A37C2788344E00279DF1 /* URLImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6F84A37B2788344E00279DF1 /* XCRemoteSwiftPackageReference "url-image" */;

@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import MockMealAdapters
 import MealPorts
 import OpenMensaMealAdapters
 
@@ -29,11 +28,7 @@ struct MensaView: View {
             .onAppear {
                 Task(priority: .medium) {
                     do {
-                        let meals = try await MockGetMealsCommand().execute(inDTO: MealQueryDTO(mensa: 42, date: Date()))
-                        /*                        let formatter = DateFormatter()
-                         formatter.dateFormat = "yyyy/MM/dd"
-                         let someDateTime = formatter.date(from: "2022/01/11")!
-                         let meals = try await GetOpenMensaMealsCommand().execute(inDTO: MealQueryDTO(mensa: 42, date: someDateTime))*/
+                         let meals = try await GetOpenMensaMealsCommand().execute(inDTO: MealQueryDTO(mensa: 42, date: Date()))
                         success(meals: meals)
                     } catch let error {
                         failure(error: error)
